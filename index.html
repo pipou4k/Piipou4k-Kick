@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piipou4k Profile</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Atlas2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        
+        .profile-glow {
+            position: relative;
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            background-size: 400%;
+            animation: moveGlow 8s linear infinite;
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.2); 
+        }
+
+        @keyframes moveGlow {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+
+        
+        .profile-pic {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #000; 
+        }
+
+        h1 {
+            margin-top: 25px;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(0,0,0,1);
+        }
+
+        /* الأزرار */
+        .links {
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 25px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.4s;
+            backdrop-filter: blur(10px);
+        }
+
+        
+        .btn img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .btn:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .kick-btn:hover { border-color: #53fc18; box-shadow: 0 0 20px #53fc18; }
+        .discord-btn:hover { border-color: #5865F2; box-shadow: 0 0 20px #5865F2; }
+
+    </style>
+</head>
+<body>
+
+    <div class="profile-glow">
+        <img src="Atlas.png" alt="Profile" class="profile-pic">
+    </div>
+
+    <h1>Piipou4k</h1>
+
+    <div class="links">
+        <a href="https://kick.com/Piipou4K" target="_blank" class="btn kick-btn">
+            <img src="Kick.png" alt="Kick">
+            <span>Piipou Kick</span>
+        </a>
+
+        <a href="https://discord.gg/K24ZD53C5" target="_blank" class="btn discord-btn">
+            <img src="Discord.png" alt="Discord">
+            <span> Piipou4k Discord</span>
+        </a>
+    </div>
+
+</body>
+</html>
